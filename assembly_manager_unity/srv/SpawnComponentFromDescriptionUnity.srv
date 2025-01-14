@@ -1,4 +1,0 @@
-string file_path
-string component_name_override
----
-bool success

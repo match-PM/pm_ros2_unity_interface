@@ -1,5 +1,0 @@
-string file_path
-bool spawn_components true
----
-string instruction_id
-bool success

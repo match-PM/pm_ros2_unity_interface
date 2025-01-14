@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(object_spawner)
+project(assembly_manager_interfaces_unity)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
@@ -8,13 +8,16 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
+find_package(geometry_msgs REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "msg/SORequest.msg"
-  "msg/SOResponse.msg"
-  "srv/SpawnObject.srv"
-  "srv/DeleteObject.srv"
-  "srv/ChangeParent.srv"
+  "srv/SpawnObjectUnity.srv"
+  "srv/DestroyObjectUnity.srv"
+  "srv/CreateRefFrameUnity.srv"
+  "srv/DeleteRefFrameUnity.srv"
+  "srv/ModifyPoseAbsoluteUnity.srv"
+  "srv/ModifyPoseRelativeUnity.srv"
+  "srv/ChangeParentFrameUnity.srv"
 )
 
 ament_export_dependencies(rosidl_default_runtime)

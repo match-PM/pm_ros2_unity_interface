@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>object_spawner</name>
+  <name>assembly_manager_interfaces_unity</name>
   <version>0.0.0</version>
   <description>TODO: Package description</description>
   <maintainer email="juyue0835@gmail.com">pmlab</maintainer>
@@ -13,7 +13,7 @@
   <exec_depend>rosidl_default_runtime</exec_depend>
   <member_of_group>rosidl_interface_packages</member_of_group>
 
-
+  <depend>geometry_msgs</depend>
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
 

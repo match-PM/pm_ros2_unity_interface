@@ -1,4 +1,0 @@
-string instruction_id
----
-bool success
-geometry_msgs/Pose assembly_transform

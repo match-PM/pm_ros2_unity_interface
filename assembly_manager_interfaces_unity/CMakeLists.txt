@@ -11,17 +11,10 @@ find_package(rosidl_default_generators REQUIRED)
 find_package(geometry_msgs REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "msg/RefFrame.msg"
-  "msg/FrConstraints.msg"
-  "msg/FrConstraintCentroid.msg"
-
+  "msg/VizAdhesivePointUnity.msg"
+  "msg/VizAdhesivePointsUnity.msg"
   "srv/SpawnObjectUnity.srv"
   "srv/DestroyObjectUnity.srv"
-  "srv/CreateRefFrameUnity.srv"
-  "srv/DeleteRefFrameUnity.srv"
-  "srv/ModifyPoseAbsoluteUnity.srv"
-  "srv/ModifyPoseRelativeUnity.srv"
-  "srv/ChangeParentFrameUnity.srv"
   DEPENDENCIES geometry_msgs std_msgs
 )
 

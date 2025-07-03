@@ -1,0 +1,7 @@
+---
+# geometry_msgs/Pose pose
+float64[3] xyz
+float64[3] abc
+float64[3] t1
+float64[3] t2
+float64[3] t3

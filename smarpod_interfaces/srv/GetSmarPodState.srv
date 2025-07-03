@@ -1,0 +1,6 @@
+---
+bool is_referenced
+uint32 max_frequency
+string model_name
+string status_info
+string sensor_mode

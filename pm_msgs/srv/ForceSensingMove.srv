@@ -1,0 +1,15 @@
+float64 start_x
+float64 start_y
+float64 start_z
+float64 start_t
+float64 target_x
+float64 target_y
+float64 target_z
+float32 max_fx
+float32 max_fy
+float32 max_fz
+uint32 step_size
+---
+bool success
+string error
+bool threshold_exceeded

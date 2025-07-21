@@ -1,0 +1,9 @@
+float64 target
+float64 max_fx
+float64 step_size
+---
+bool completed
+bool success
+string error
+
+# This is for the smaract gripper

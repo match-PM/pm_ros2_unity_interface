@@ -6,5 +6,6 @@
     "python.analysis.extraPaths": [
         "/opt/ros/humble/lib/python3.10/site-packages",
         "/opt/ros/humble/local/lib/python3.10/dist-packages"
-    ]
+    ],
+    "cmake.sourceDirectory": "/home/match-mover/Documents/ros2-for-unity/src/ros2cs/custom_messages/pm_ros2_unity_interface/assembly_manager_interfaces"
 }

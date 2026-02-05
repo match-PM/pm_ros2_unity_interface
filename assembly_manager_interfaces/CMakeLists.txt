@@ -34,6 +34,11 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/SpawnFramesFromDescription.srv"
   "srv/FramesForComponent.srv"
   "srv/ClearScene.srv"
+  "srv/SaveSceneToFile.srv"
+  "srv/LoadSceneFromFile.srv"
+  "srv/ResetFrameProperties.srv"
+  "srv/SetFrameProperties.srv"
+  "srv/SetComponentUuid.srv"
 
   "msg/AssemblyInstruction.msg"
   "msg/Object.msg"
@@ -46,6 +51,13 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/FrConstraints.msg"
   "msg/FrConstraintOrthogonal.msg"
   "msg/FrConstraintInPlane.msg"
+  "msg/VisionFrameProperties.msg"
+  "msg/GluePtFrameProperties.msg"
+  "msg/LaserFrameProperties.msg"
+  "msg/GrippingFrameProperties.msg"
+  "msg/RefFrameProperties.msg"
+  "msg/AssemblyFrameProperties.msg"
+
   DEPENDENCIES geometry_msgs std_msgs# Add packages that above messages depend on, in this case geometry_msgs for Sphere.msg
 )
 if(BUILD_TESTING)

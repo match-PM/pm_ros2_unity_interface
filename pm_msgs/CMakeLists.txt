@@ -28,9 +28,11 @@ rosidl_generate_interfaces(
   "msg/GripperForces.msg"
   "msg/VizAdhesivePoint.msg"
   "msg/VizAdhesivePoints.msg"
+  "msg/DispensePoint.msg"
+  "msg/UvCuringSpotProperty.msg"
 
   "srv/ForceSensingMove.srv"
-  "srv/DisppenseAtPoints.srv"
+  "srv/DispenseAtPoints.srv"
   "srv/EmptyWithSuccess.srv"
   "srv/UVSetOnOff.srv"
   "srv/UVGetOnOff.srv"
@@ -65,6 +67,11 @@ rosidl_generate_interfaces(
   "srv/GripperGetAccel.srv"
   "srv/GripperGetForces.srv"
   "srv/GripperGetPosition.srv"
+  "srv/SetUvSliderXPositions.srv"
+  "srv/Gripper2JawSetPosition.srv"
+  "srv/DispenseTestPoints.srv"
+  "srv/ChangeToolAndRestart.srv"
+  "srv/DispenseAtPath.srv"
   DEPENDENCIES geometry_msgs
 )
 

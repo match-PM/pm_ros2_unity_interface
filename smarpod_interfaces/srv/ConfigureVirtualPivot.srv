@@ -1,0 +1,8 @@
+# Internal controller-to-hardware service. Does not call Smarpod_SetPivot.
+bool enabled
+geometry_msgs/Transform default_to_virtual
+# System-clock expiration prevents a timed-out request being applied later.
+int64 expires_at_ns
+---
+bool success
+string message

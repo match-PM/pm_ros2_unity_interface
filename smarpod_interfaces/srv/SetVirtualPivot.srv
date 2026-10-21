@@ -1,0 +1,6 @@
+# Snapshot this TF frame relative to the default moving pivot.
+# The current measured pose becomes virtual zero. Units: metres/radians.
+string frame_name
+---
+bool success
+string message

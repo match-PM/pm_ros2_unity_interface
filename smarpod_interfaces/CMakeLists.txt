@@ -29,6 +29,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/SmarPodState.msg"
   "srv/GetSmarPodState.srv"
   "srv/SetPivot.srv"
+  "srv/SetVirtualPivot.srv"
+  "srv/ConfigureVirtualPivot.srv"
   "srv/GetPivot.srv"
   "srv/ReferenceHexapod.srv"
   "srv/GetString.srv"

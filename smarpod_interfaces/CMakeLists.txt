@@ -7,6 +7,7 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
+find_package(builtin_interfaces REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 # uncomment the following section in order to fill in
@@ -27,6 +28,7 @@ endif()
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/SmarPodState.msg"
+  "msg/SmarPodSimState.msg"
   "srv/GetSmarPodState.srv"
   "srv/SetPivot.srv"
   "srv/SetVirtualPivot.srv"
@@ -44,7 +46,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/SetSpeed.srv"
   "srv/GetSpeed.srv"
   "srv/IsPoseReachable.srv"
-  DEPENDENCIES geometry_msgs # Add packages that above messages depend on, in this case geometry_msgs for Sphere.msg
+  DEPENDENCIES builtin_interfaces geometry_msgs # Add packages that above messages depend on, in this case geometry_msgs for Sphere.msg
 )
 
 ament_package()
